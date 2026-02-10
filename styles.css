@@ -25,12 +25,24 @@ main{padding-top:72px}
 .btn-secondary:hover{border-color:#3a3f4b}
 .hero-stage{position:relative;width:100%;display:flex;align-items:center;justify-content:center;z-index:10}
 .sound-wave{position:absolute;width:600px;height:600px;display:flex;align-items:center;justify-content:center}
-.sound-wave div{position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,0.08);opacity:0;animation:wave 4s infinite linear}
+.sound-wave div{position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,0.23);opacity:0;animation:wave 4s infinite linear}
 .sound-wave div:nth-child(1){width:100%;height:100%;animation-delay:0s}
 .sound-wave div:nth-child(2){width:100%;height:100%;animation-delay:1.3s}
 .sound-wave div:nth-child(3){width:100%;height:100%;animation-delay:2.6s}
 @keyframes wave{0%{transform:scale(0.5);opacity:0}50%{opacity:1}100%{transform:scale(1.2);opacity:0}}
-.slide-area{position:relative;display:flex;align-items:center;gap:22px;margin:0 auto}
+.selection-tool{padding:40px 20px;background:#0b0c0f;display:flex;justify-content:center}
+.selection-container{width:100%;max-width:800px;background:#14171d;padding:40px;border-radius:24px;border:1px solid #232734;text-align:center}
+.selection-container h2{margin:0 0 12px;font-size:28px;color:#fff}
+.selection-container p{color:#aeb0b6;margin:0 0 24px}
+.selection-form{display:flex;gap:12px;margin-bottom:24px}
+.selection-form input{flex:1;background:#0b0c0f;border:1px solid #2a2e38;border-radius:12px;padding:0 20px;color:#fff;font-size:16px;height:48px;outline:none;transition:.2s}
+.selection-form input:focus{border-color:#2d7cff}
+.selection-result{display:flex;flex-direction:column;gap:16px;align-items:center}
+.selection-message{color:#2d7cff;font-weight:500;margin-bottom:12px}
+@media (max-width:640px){
+.selection-form{flex-direction:column}
+.selection-container{padding:24px}
+}
 .arrow{width:44px;height:44px;border-radius:50%;border:none;background:#fff;color:#111;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.4)}
 .arrow.left{background:#fff url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22><path fill=%22black%22 d=%22M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z%22/></svg>') no-repeat center}
 .arrow.right{background:#fff url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22><path fill=%22black%22 d=%22M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z%22/></svg>') no-repeat center}
@@ -71,6 +83,17 @@ main{padding-top:72px}
 .grid{grid-template-columns:repeat(2,minmax(180px,1fr))}
 .contacts-card{grid-template-columns:1fr}
 }
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.8);backdrop-filter:blur(8px);z-index:100;display:none;align-items:center;justify-content:center;opacity:0;transition:opacity .3s}
+.modal-overlay.active{display:flex;opacity:1}
+.modal-content{background:#1a1d24;width:clamp(300px,90vw,500px);border-radius:24px;border:1px solid #2a2e38;padding:32px;position:relative;transform:scale(0.9);transition:transform .3s;box-shadow:0 20px 60px rgba(0,0,0,0.6)}
+.modal-overlay.active .modal-content{transform:scale(1)}
+.modal-close{position:absolute;top:16px;right:16px;background:none;border:none;color:#a6a8ad;font-size:28px;cursor:pointer;line-height:1;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:.2s}
+.modal-close:hover{color:#fff;background:rgba(255,255,255,0.1)}
+.modal-title{font-size:24px;margin:0 0 24px;color:#fff}
+.modal-body h4{color:#a6a8ad;margin:0 0 16px;font-size:14px;text-transform:uppercase;letter-spacing:0.05em}
+.modal-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+.modal-list li{position:relative;padding-left:20px;color:#e6e7ea;font-size:15px;line-height:1.5}
+.modal-list li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#2d7cff}
 @media (max-width:640px){
 .nav{display:none}
 .hero-title{font-size:36px}
