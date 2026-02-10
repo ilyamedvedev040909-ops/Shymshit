@@ -33,6 +33,9 @@ main{padding-top:72px}
 .product-visual{position:relative;background:linear-gradient(180deg,#1a1d24,#0f1218);display:grid;place-items:center}
 .product-visual::before{content:"";width:72%;height:56%;border-radius:16px;background:linear-gradient(135deg,#2b2f3a,#171a21);box-shadow:0 10px 30px rgba(0,0,0,.5),0 0 0 1px #2a2e38 inset}
 .product-visual::after{content:"";position:absolute;bottom:22px;width:60%;height:6px;border-radius:999px;background:radial-gradient(closest-side,rgba(255,255,255,.35),rgba(255,255,255,.05) 70%,transparent);filter:blur(1px)}
+.pv-text{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:12px;padding:40px 48px;z-index:3}
+.pv-text .hero-actions{justify-content:flex-start}
+.pv-text .btn{box-shadow:none}
 .slide-info{background:#14171d;padding:22px}
 .slide-list{display:flex;flex-direction:column;gap:8px}
 .slide-item{display:flex;align-items:center;gap:10px;color:#aeb0b6}
