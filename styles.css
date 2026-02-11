@@ -48,13 +48,16 @@ main{padding-top:72px}
 .arrow.right{background:#fff url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22><path fill=%22black%22 d=%22M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z%22/></svg>') no-repeat center}
 .slide{width:clamp(700px,72vw,900px);max-width:92vw;height:320px;border-radius:20px;background:linear-gradient(180deg,#12151c,#0e1116);box-shadow:0 40px 120px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.06);display:grid;grid-template-columns:1fr 280px;overflow:hidden}
 .product-visual{position:relative;background:linear-gradient(180deg,#1a1d24,#0f1218);display:grid;place-items:center}
-.product-visual::before{content:"";width:70%;height:54%;border-radius:16px;background:linear-gradient(135deg,#2b2f3a,#171a21);box-shadow:0 10px 30px rgba(0,0,0,.5),0 0 0 1px #2a2e38 inset}
+.product-visual::before{content:"";width:70%;height:55%;border-radius:16px;background:linear-gradient(135deg,#2b2f3a,#171a21);box-shadow:0 10px 30px rgba(0,0,0,.5),0 0 0 1px #2a2e38 inset}
 .product-visual::after{display:none}
-.pv-panel{position:absolute;top:45%;left:50%;transform:translate(-50%,-50%);width:clamp(320px,42vw,520px);height:clamp(140px,25vw,220px);display:flex;align-items:center;justify-content:center;text-align:center}
-.pv-text{display:flex;flex-direction:column;gap:8px;padding:16px 20px;align-items:center}
-.pv-text .hero-title{font-size:clamp(24px,4.4vw,36px);letter-spacing:.02em}
-.pv-text .hero-sub{font-size:14px;color:#b9bcc2}
-.pv-actions{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:32px;width:100%;justify-content:center}
+.pv-panel{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:clamp(220px,28vw,320px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:10}
+.pv-text{display:flex;flex-direction:column;gap:8px;padding:8px 16px;align-items:center}
+.pv-text .hero-title{font-size:clamp(18px,3vw,26px);letter-spacing:.02em}
+.robot-container{display:flex;align-items:center;justify-content:center;position:relative}
+.robot-icon{position:relative;z-index:15}
+.robot-icon svg{width:120px;height:120px;display:block}
+.pv-text .hero-sub{font-size:13px;color:#b9bcc2}
+.pv-actions{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:16px;width:100%;justify-content:center;z-index:12}
 .btn-action{background:#1a1d24;color:#e7e8ea;border:1px solid #2a2e38}
 .btn-action:hover{border-color:#3a3f4b;background:#232734}
 .slide-info{background:#14171d;padding:22px;display:flex;flex-direction:column;justify-content:center}
