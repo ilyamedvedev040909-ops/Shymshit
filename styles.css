@@ -25,7 +25,7 @@ main{padding-top:72px}
 .btn-secondary:hover{border-color:#3a3f4b}
 .hero-stage{position:relative;width:100%;display:flex;align-items:center;justify-content:center;z-index:10}
 .sound-wave{position:absolute;width:600px;height:600px;display:flex;align-items:center;justify-content:center}
-.sound-wave div{position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,0.23);opacity:0;animation:wave 4s infinite linear}
+.sound-wave div{position:absolute;border-radius:50%;border:2px solid rgba(255,255,255,0.6);opacity:0;animation:wave 4s infinite linear}
 .sound-wave div:nth-child(1){width:100%;height:100%;animation-delay:0s}
 .sound-wave div:nth-child(2){width:100%;height:100%;animation-delay:1.3s}
 .sound-wave div:nth-child(3){width:100%;height:100%;animation-delay:2.6s}
