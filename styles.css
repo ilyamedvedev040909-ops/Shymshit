@@ -75,6 +75,16 @@ main{padding-top:72px}
 .card-specs{color:#aeb0b6;font-size:14px}
 .card-actions{display:flex;gap:8px;margin-top:auto}
 .about,.contacts{padding:80px 20px;border-top:1px solid #20242f;background:linear-gradient(180deg,#0e1116,#0c0f13)}
+.about-lead{font-size:18px;line-height:1.6;color:#e6e7ea;max-width:800px;margin-bottom:40px}
+.about-block{margin-bottom:32px}
+.about-block h3{font-size:20px;color:#fff;margin:0 0 16px;font-weight:600;letter-spacing:0.02em}
+.about-block p{color:#aeb0b6;margin:0 0 16px}
+.about-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+.about-list li{position:relative;padding-left:24px;color:#b9bcc2;line-height:1.5;font-size:15px}
+.about-list li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#2d7cff;box-shadow:0 0 8px rgba(45,124,255,0.6)}
+.about-list strong{color:#e6e7ea;font-weight:600}
+.about-result{margin-top:40px;padding:24px;background:rgba(45,124,255,0.08);border:1px solid rgba(45,124,255,0.2);border-radius:16px;color:#e6e7ea;font-size:16px;line-height:1.6}
+.about-result strong{color:#2d7cff}
 .contacts-card{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .label{color:#aeb0b6;font-size:13px}
 .value{font-size:16px}

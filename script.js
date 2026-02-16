@@ -15,7 +15,7 @@ async function findSolution() {
   `;
 
   try {
-    const API_KEY = "AIzaSyAK0tvSEbzUNcK0ABtSrii1jLvEUW0YP8A";
+    const API_KEY = "AIzaSyDMFsPcWDJGol7fy-MMyywidSDUqLd5th4";
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`, {
       method: "POST",
       headers: {
